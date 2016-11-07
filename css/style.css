@@ -1,0 +1,240 @@
+/* ======================= GENERAL ===================
+   =================================================== */
+
+body {
+    background-color: #3A2B27;
+    padding: 7px;
+}
+
+header {
+    background-image: url(../elements/header-bg2.png);
+    margin: 0px auto;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.img-hover {
+    width: 100%;
+    margin-top: 15px;
+    color: whitesmoke;
+    height: 600px;
+}
+
+section h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 1.45em;
+    color: whitesmoke;
+}
+
+section h4 {
+    text-transform: capitalize;
+    font-weight: lighter;
+    font-size: 1.3em;
+    margin-top: 0px;
+    max-width: 70%;
+    margin: 0 auto;
+    line-height: 30px;
+    color: whitesmoke;
+}
+
+section img {
+    width: 50%;
+    margin-top: 60px;
+}
+
+.section-small {
+    height: 350px;
+    float: none;
+}
+
+.present {
+    background-color: #EF3E27;
+    text-align: center;
+    font-family: "Montserrat";
+    color: whitesmoke;
+    padding: 75px 200px 75px 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    border-top: 15px solid #3A2B27;
+}
+
+form {
+    font-family: "Montserrat";
+    color: whitesmoke;
+    font-size: 1em;
+}
+
+form div {
+    width: 50%;
+    float: left;
+}
+
+h2 {
+    padding-top: 75px;
+    font-size: 25px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+input,
+label {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+}
+
+input {
+    background-color: lightgray;
+    width: 56%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+label {
+    height: 100%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+textarea {
+    display: block;
+    width: 71%;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: none;
+    background-color: lightgray;
+    padding: 15px;
+}
+
+.textarea label {
+    width: 75%;
+    margin-top: 130px;
+}
+
+input:focus, textarea:focus {
+    background-color: white;
+    outline: 0;
+}
+button {
+    height: 70px;
+    width: 25%;
+    margin-left: 12.5%;
+    margin-top: 20px;
+    font-family: "Montserrat";
+    font-size: 1.2em;
+    color: whitesmoke;
+    background-color: #EF3E27;
+    border: none;
+    text-transform: uppercase;
+    margin-bottom: 75px;
+    border-bottom: 7px solid #D32610;
+}
+
+button:hover {
+    background-color: #D32610;
+}
+
+
+/* ======================== IMG ======================
+   =================================================== */
+
+.blind-dog {
+    background-image: url(../elements/blind-dog-thumb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    float: left;
+}
+
+.track29 {
+    background-image: url(../elements/track29-thumb.jpg);
+}
+
+.temperate {
+    background-image: url(../elements/temperate-thumb.jpg);
+}
+
+.horizon {
+    background-image: url(../elements/horizon-thumb.jpg);
+}
+
+.bitter-alibi {
+    background-image: url(../elements/bitter-thumb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 33.33%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    float: left;
+}
+
+.rococo {
+    background-image: url(../elements/rococo-thumb.jpg);
+}
+
+.rino {
+    background-image: url(../elements/fancyrhino-thumb.jpg);
+}
+
+
+/* ======================= HOVER =====================
+   =================================================== */
+
+.hover {
+    background: -moz-radial-gradient(center, ellipse cover, rgba(45, 45, 41, 0.9) 0%, rgba(0, 0, 0, 0.9) 65%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(45, 45, 41, 0.9) 0%, rgba(0, 0, 0, 0.9) 65%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(45, 45, 41, 0.9) 0%, rgba(0, 0, 0, 0.9) 75%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    font-family: "Montserrat";
+    opacity: 0;
+}
+
+.hover:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.hover-small {
+    background: -moz-radial-gradient(center, ellipse cover, rgba(45, 45, 41, 0.9) 0%, rgba(0, 0, 0, 0.9) 75%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(45, 45, 41, 0.9) 0%, rgba(0, 0, 0, 0.9) 75%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(45, 45, 41, 0.9) 0%, rgba(0, 0, 0, 0.9) 75%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    font-family: "Montserrat";
+    opacity: 0;
+}
+
+.hover-small:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
