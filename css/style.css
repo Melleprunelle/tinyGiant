@@ -14,6 +14,9 @@ header {
     height: 600px;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 header img {
@@ -24,9 +27,6 @@ header img {
 
 .img-hover {
     width: 100%;
-/*
-    margin-top: 15px;
-*/
     color: #EAE4DC;
     height: 600px;
     position: relative;
@@ -82,7 +82,6 @@ form {
     margin-bottom: 500px;
 }
 
-
 form div {
     width: 50%;
     float: left;
@@ -133,13 +132,15 @@ textarea {
     margin-top: 130px;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     background-color: white;
     outline: 0;
 }
+
 button {
     height: 60px;
-    width: 22%;
+    width: 25%;
     margin-top: 20px;
     font-family: "Montserrat";
     font-size: 1.2em;
@@ -182,7 +183,7 @@ i:hover {
 }
 
 .fa-twitter {
-     margin-left: 100px;   
+    margin-left: 100px;
 }
 
 footer a {
@@ -295,4 +296,105 @@ footer p {
 .hover-small:hover {
     opacity: 1;
     transition: 0.5s;
+}
+
+
+/* ==================== RESPONSIVE ===================
+   =================================================== */
+
+@media (max-width: 768px) {
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+    header {
+        height: 50%;
+    }
+    header img {
+        display: block;
+        margin: 0 auto;
+        width: 52%;
+    }
+    .img-hover {
+        height: 75vh;
+    }
+    .img-hover img {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .blind-dog {
+        width: 100%;
+    }
+    .img-hover h2 {
+        text-transform: uppercase;
+        margin-top: 0px
+    }
+    .bitter-alibi {
+        width: 100%;
+    }
+    .hover-small,
+    .hover {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .present {
+        padding: 75px 30px 75px 30px;
+        font-size: 1em;
+    }
+    form {
+        margin-bottom: 18vh;
+    }
+    form div {
+        width: 100%;
+        float: none;
+    }
+    input,
+    label,
+    textarea {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        padding-left: 0px;
+        padding: 0px;
+    }
+    label {
+        height: 100%;
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    
+    .textarea label {
+        width: 80%;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    form h2 {
+        width: 80%;
+    }
+    button {
+        margin-left: 10%;
+        width: 40%;
+        margin-bottom: 0px;
+    }
+    footer {
+        height: 230px;
+    }
+    footer div {
+        width: 100%;
+    }
+    foooter i {
+        text-align: left;
+    }
+    .fa-twitter {
+        margin-left: 10%;
+        padding-left: 0px;
+    }
+    footer a {
+        margin-left: 10%;
+    }
+    footer p {
+        margin-left: 10%;
+    }
 }
